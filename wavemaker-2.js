@@ -10,15 +10,6 @@ function setup() {
 function draw() {
 
     background(25);
-    //
-    //    if (c >= 360) {
-    //        c = 0;
-    //    } else {
-    //        c++;
-    //    }
-
-
-
 
     for (let x = 0; x <= width; x = x + 75) {
         for (let y = 0; y <= height; y = y + 75) {
@@ -42,11 +33,6 @@ function draw() {
 
             ellipse(x, y, 2);
 
-            //            if (x > 100 && x < innerWidth - 100 && y > 100 && y < innerHeight - 100) {
-            //                fill(255);
-            //                noStroke();
-            //                ellipse(myX, myY, 5);
-            //            }
         }
     }
 
