@@ -1,26 +1,27 @@
-let x = 0;
-let y = 0;
+let c = 0;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    noStroke();
 }
 
 function draw() {
-    background(51);
+    blendMode(BLEND);
+    background(0);
 
-    // lerp() calculates a number between two numbers at a specific increment.
-    // The amt parameter is the amount to interpolate between the two values
-    // where 0.0 equal to the first point, 0.1 is very near the first point, 0.5
-    // is half-way in between, etc.
+    noFill();
+    strokeWeight(10);
 
-    // Here we are moving 5% of the way to the mouse location each frame
-        x = lerp(x, mouseX, 0.05);
-        y = lerp(y, mouseY, 0.05);
+    blendMode(ADD);
 
-    fill(255);
-    stroke(255);
+    var offset = map(mouseX, 0, windowWidth, 0, 50);
 
 
-    ellipse(x, y, 66, 66);
+
+    stroke(255, 0, 0);
+    ellipse(mouseX + 50, mouseY + 50, 500, 500);
+    stroke(0, 255, 0);
+    ellipse(mouseX, mouseY, 500, 500);
+    stroke(0, 0, 255);
+    ellipse(mouseX - 50, mouseY - 50, 500, 500);
+
 }
