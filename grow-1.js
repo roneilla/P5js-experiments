@@ -14,6 +14,7 @@ function draw() {
         circles[i].display();
     }
 }
+
 class Circle {
     diam = 0;
     c = 0;
@@ -34,8 +35,8 @@ class Circle {
             this.c++;
         }
 
-        strokeWeight(2);
-        stroke(this.c, 255, 255);
+        strokeWeight(50);
+        stroke(this.c*2, 255, 255);
         noFill();
         ellipse(mouseX, mouseY, this.diam, this.diam);
 

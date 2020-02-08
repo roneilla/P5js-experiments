@@ -28,12 +28,12 @@ function draw() {
 
     for (let x = 0; x <= width; x = x + 20) {
         for (let y = 0; y <= height; y = y + 20) {
-//
-//            const xAngle = map(mouseX, 0, width, -4 * PI, 4 * PI, true);
-//            const yAngle = map(mouseY, 0, height, -4 * PI, 4 * PI, true);
+
+            const xAngle = map(mouseX, 0, width, -4 * PI, 4 * PI, true);
+            const yAngle = map(mouseY, 0, height, -4 * PI, 4 * PI, true);
             
-            const xAngle = 2 * PI;
-            const yAngle = 1 * PI;
+//            const xAngle = 2 * PI;
+//            const yAngle = 1 * PI;
 
             const angle = xAngle * (x / width) + yAngle * (y / height);
 
