@@ -3,7 +3,7 @@ let syne;
 let points;
 let bounds;
 
-let name = "KATIE BURTON";
+let name = "RONEILLA";
 let size = 150;
 
 let colour = 0;
