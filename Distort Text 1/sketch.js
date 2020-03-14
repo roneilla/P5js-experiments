@@ -4,7 +4,7 @@ let pts;
 let colour;
 
 function preload() {
-    font = loadFont('assets/Syne-Bold.ttf');
+    font = loadFont('../assets/Syne-Bold.ttf');
 
 }
 

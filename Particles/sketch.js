@@ -1,6 +1,6 @@
 let mover = [];
 
-var num = 1000;
+var num = 100;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -20,6 +20,8 @@ function draw() {
     for (var i = 0; i < num; i++) {
         mover[i].show();
         mover[i].update();
+        
+        if (mover[i].x)
     }
 
 }
@@ -29,14 +31,14 @@ function Particle(x, y) {
     this.y = y;
     this.rad = 1;
 
-    this.xspeed = 5;
-    this.yspeed = 5;
+    this.xspeed = 2;
+    this.yspeed = 2;
 
-    this.xdirection = random(0, 1);
-    this.ydirection = random(0, 1);
+    this.xdirection = random(-1, 1);
+    this.ydirection = random(-1, 1);
 
     this.behaviors = function () {
-var arrive = this.arrive(this.target);
+        var arrive = this.arrive(this.target);
         var mouse = createVector(mouseX, mouseY);
         var flee = this.flee(mouse);
 
